@@ -98,19 +98,7 @@
     }
   </style>
 
-  <div id="menu-toggle">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-  <nav id="menu">
-    <ul>
-        <br>
-                <br>
 
-
-    </ul>
-  </nav>
 
   <script>
     document.getElementById('menu-toggle').addEventListener('click', function() {
@@ -813,6 +801,7 @@ button.button1:hover {
                     alert("حدث خطأ أثناء تأكيد الطلب.");
                 }
             })
+                
             .catch(error => {
                 console.error('Error:', error);
                 alert("حدث خطأ أثناء إرسال البيانات.");
