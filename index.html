@@ -98,7 +98,22 @@
     }
   </style>
 
+  <div id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <nav id="menu">
+    <ul>
+        <br>
+                <br>
 
+        <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="index.html">Contact</a></li>
+    </ul>
+  </nav>
 
   <script>
     document.getElementById('menu-toggle').addEventListener('click', function() {
@@ -250,7 +265,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             width: 90%;
-            max-width: 400px;
+            max-width: 350px;
             background-color: rgb(204, 235, 255) ;
             border-radius: 44px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -801,7 +816,6 @@ button.button1:hover {
                     alert("حدث خطأ أثناء تأكيد الطلب.");
                 }
             })
-                
             .catch(error => {
                 console.error('Error:', error);
                 alert("حدث خطأ أثناء إرسال البيانات.");
