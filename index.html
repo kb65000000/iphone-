@@ -1569,9 +1569,7 @@ document.addEventListener('gesturestart', function (event) {
             });
 
         }
-document.addEventListener('gesturestart', function (event) {
-    event.preventDefault();
-});
+
 
     </script>
     <script>
@@ -1585,9 +1583,7 @@ document.addEventListener('gesturestart', function (event) {
             modal.style.display = 'none';
             overlay.style.display = 'none';
         });
-        document.addEventListener('gesturestart', function (event) {
-    event.preventDefault();
-});
+
 
     </script>
     <script>
@@ -1679,10 +1675,9 @@ document.addEventListener('gesturestart', function (event) {
             return false; // منع إعادة تحميل الصفحة
         }
 
-document.addEventListener('gesturestart', function (event) {
-    event.preventDefault();
-});
-
+       document.addEventListener('dblclick', function(event) {
+            event.preventDefault();
+        });
     </script>
 </body>
 </html>
