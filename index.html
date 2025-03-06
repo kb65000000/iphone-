@@ -55,7 +55,7 @@
       position: fixed;
       top: 0;
       left: 0;
-      width: 200px;
+      width: 20٠px;
       height: 100%;
       background: #fff;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -193,9 +193,10 @@
 
         .book-price {
             font-size: 16px;
-            color: #333;
+            color: #000;
             font-weight: bold;
             margin: 10px 0;
+
         }
 
         .book-link {
@@ -266,16 +267,16 @@
             transform: translate(-50%, -50%);
             width: 90%;
             max-width: 426px;
-            background-color: rgb(204, 235, 255) ;
-            border-radius: 44px;
+            background-color: #fff;
+            border-radius: 14px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             padding: 20px;
             z-index: 6000;
         }
         @media (max-width: 600px) {
         .modal {
-        max-width: 250px;
-        top: 30%;
+        max-width: 230px;
+
         }
         }
 
@@ -379,14 +380,7 @@
     </style>
 
             <style>
-        textarea {
-            width: 120%;
-            resize: vertical; /* يسمح فقط بتغيير الارتفاع */
-            padding: 1px;
-            font-size:  10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
+
                   textarea {
             height: 15px;
             padding: 10px; /* التحكم بالمسافة داخل الحقل */
@@ -401,7 +395,7 @@
 
                 /* تخصيص مربعات الإدخال */
 input[type="text"], input[type="email"], input[type="tel"] {
-    width: 250px; /* تحديد العرض */
+    width: 300px; /* تحديد العرض */
     height: 40px; /* تحديد الارتفاع */
     padding: 10px; /* مساحة داخلية */
     margin: 10px 0; /* المسافة بين المربعات */
@@ -410,6 +404,12 @@ input[type="text"], input[type="email"], input[type="tel"] {
     font-size: 16px; /* حجم الخط */
     transition: all 0.3s ease; /* إضافة تأثير انميشن على التغييرات */
 }
+  @media (max-width: 600px) {
+  input[type="text"], input[type="email"], input[type="tel"] {
+      width: 200px; /* تحديد العرض */
+      }
+      }
+
 
 /* تأثير عند التركيز داخل المربع */
 input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus {
@@ -690,7 +690,7 @@ button.button1:hover {
                 <tr>
                     <td>
                         <center>
-                            <input dir=ltr type="text" id="name"  name="name" placeholder="the name" required>
+                            <input  dir=ltr type="text" id="name"  name="name" placeholder="the name" required>
                             <input dir=ltr type="tel" id="Address" name="Address" placeholder="the Address" required>
                             <input dir=ltr type="tel" id="phone" name="phone" placeholder="the phone" required>
                         </center>
@@ -714,7 +714,7 @@ button.button1:hover {
 
 
 
-    <div id="success-alert" class="alert">The product has been successfully added to the cart</div>
+    <div id="success-alert" class="alert"> successfully added to the cart</div>
     <div id="f-alert" class="alert">Order confirmed successfully!</div>
 
         <script>
@@ -796,7 +796,7 @@ button.button1:hover {
             alertElement.style.display = "block";
             setTimeout(() => {
                 alertElement.style.display = "none";
-            }, 3000);
+            }, 1000);
         }
 
         function validateCart() {
